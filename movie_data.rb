@@ -67,14 +67,7 @@ class MovieData
 	def most_similar(u)
 		#Returns a list of users whose tastes are most similar to the tastes of user u
 		user_ids = @users.keys
-		user_ids.sort_by {|id| [similarity(u,id)]}.reverse.drop(1)
+		user_ids.sort_by {|id| [similarity(u,id)]}.reverse.drop(1) #The 1st is always u
 	end
 
 end
-
-data = MovieData.new('u.data')
-data.load_data
-#print data.popularity_list.first(10)
-#print data.popularity 100
-#print data.similarity(10,100)
-puts data.most_similar(100).first(10)
