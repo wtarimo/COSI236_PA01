@@ -1,6 +1,6 @@
-#Author: William Tarimo
-#COSI236B - PA01
-#1/20/2014
+Author: William Tarimo
+COSI236B - PA01
+1/20/2014
 
 
 A ruby program that reads in a large data set of movie ratings and produces some analysis.
@@ -10,7 +10,7 @@ movie_data.rb contains a class MovieData with the following methods:
 
 	popularity(movie_id) - this will return a number that indicates the popularity (higher numbers are more popular). Popularity is sorted by the sum of ratings, then the number of ratings; if there are n movies then the most popular has popularity n.
 
-	popularity_list - this will generate a list of all movie_id’s ordered by decreasing popularity
+	popularity_list - this will generate a list of all movie_ids ordered by decreasing popularity
 
 	similarity(user1,user2) - this will generate a number which indicates the similarity in movie preference between user1 and user2 (where higher numbers indicate greater similarity). This is the sum of how close the ratings are for movies rated by both users. Since ratings are [1,5] then closeness = 5 - abs(rating1-rating2)
 	
